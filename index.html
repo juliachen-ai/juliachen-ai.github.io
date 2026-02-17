@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Chen — AI Governance Research & Advisory</title>
+  <meta name="description" content="Julia Chen offers AI governance research, stakeholder engagement, and strategy advisory services, with deep expertise on China's AI ecosystem.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f6f1eb;
+      --bg-card: #ffffff;
+      --text: #2c2c2c;
+      --text-light: #6b6560;
+      --accent: #8a7560;
+      --border: #e2dbd3;
+      --heading: 'Lora', Georgia, serif;
+      --sans: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.65;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(246, 241, 235, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .nav-inner {
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: flex-end;
+      padding: 16px 32px;
+    }
+    nav .nav-links { display: flex; gap: 32px; align-items: center; }
+    nav .nav-links a {
+      font-size: 13px; font-weight: 400;
+      color: var(--text-light);
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+    nav .nav-links a:hover { color: var(--text); }
+    nav .nav-links a svg { vertical-align: middle; }
+
+    /* SECTIONS */
+    section { max-width: 960px; margin: 0 auto; padding: 0 32px; }
+
+    /* HERO / ABOUT */
+    .hero {
+      padding-top: 120px;
+      padding-bottom: 64px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-family: var(--heading);
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .hero-text .subtitle {
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 400;
+      margin-bottom: 28px;
+      letter-spacing: 0.2px;
+    }
+    .hero-text p {
+      color: var(--text-light);
+      margin-bottom: 14px;
+      max-width: 520px;
+    }
+    .hero-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .icon-links {
+      display: flex; gap: 14px; margin-top: 24px; align-items: center;
+    }
+    .icon-links a {
+      color: var(--text-light);
+      transition: color 0.2s;
+    }
+    .icon-links a:hover { color: var(--text); }
+
+    /* DIVIDER */
+    .divider {
+      max-width: 960px; margin: 0 auto;
+      border: none; border-top: 1px solid var(--border);
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-family: var(--heading);
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 32px;
+      padding-top: 64px;
+    }
+
+    /* WRITING */
+    .writing-list {
+      padding-bottom: 80px;
+    }
+    .writing-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      gap: 24px;
+    }
+    .writing-item:first-child { border-top: 1px solid var(--border); }
+    .writing-item a {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+      flex: 1;
+    }
+    .writing-item a:hover { color: var(--accent); }
+    .writing-meta {
+      font-size: 12px;
+      color: var(--text-light);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      max-width: 960px; margin: 0 auto;
+      padding: 24px 32px 48px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-light);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        gap: 32px;
+      }
+      .hero-photo {
+        max-width: 240px;
+        order: -1;
+      }
+      .hero-text h1 { font-size: 28px; }
+      .writing-item { flex-direction: column; gap: 4px; }
+      nav .nav-inner { padding: 14px 20px; }
+      nav .nav-links { gap: 20px; }
+      section { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#writing">Writing</a>
+      <a href="mailto:julia.chen1@hotmail.com" title="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/juliachen123/" target="_blank" title="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Julia Chen</h1>
+      <p class="subtitle">AI Governance Research & Advisory</p>
+      <p>
+        I conduct AI governance research with a focus on China's AI safety and regulatory landscape.
+      </p>
+      <p>
+        Born and raised in the UK, I spent six years working in Beijing at ByteDance, Amazon Web Services, and Concordia AI. I have advanced Mandarin and am comfortable working across cultures and sectors.
+      </p>
+      <p>
+        I offer research, stakeholder engagement, and strategy services. Current and former clients include the <a href="https://simoninstitute.ch" target="_blank" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px;">Simon Institute for Longterm Governance</a> and <a href="https://thefuturesociety.org" target="_blank" style="color:var(--accent);text-decoration:underline;text-underline-offset:3px;">The Future Society</a>.
+      </p>
+      <div class="icon-links">
+        <a href="mailto:julia.chen1@hotmail.com" title="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/juliachen123/" target="_blank" title="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 16 16" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+        </a>
+      </div>
+    </div>
+    <img src="headshot.jpg" alt="Julia Chen" class="hero-photo">
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- WRITING -->
+<section id="writing">
+  <h2 class="section-title">Writing</h2>
+  <div class="writing-list">
+    <div class="writing-item">
+      <a href="https://simoninstitute.ch/blog/post/open-ai-models-key-actors-and-their-positions" target="_blank">Open AI Models: Key Actors and Their Positions</a>
+      <span class="writing-meta">Simon Institute &middot; 2026</span>
+    </div>
+    <div class="writing-item">
+      <a href="https://simoninstitute.ch/blog/post/open-ai-models-an-introduction" target="_blank">Open AI Models: An Introduction</a>
+      <span class="writing-meta">Simon Institute &middot; 2026</span>
+    </div>
+    <div class="writing-item">
+      <a href="https://assets.website-files.com/62c21546bfcfcd456b59ec8a/62fdf28844227200c89d3ffc_%E2%80%A2Reframining_AI_Governance-Perspectives_from_Asia.pdf" target="_blank">Book chapter: Chinese AI Regulation</a>
+      <span class="writing-meta">Reframing AI Governance &middot; 2022</span>
+    </div>
+    <div class="writing-item">
+      <a href="https://asiasociety.org/sites/default/files/inline-files/Final%20Deepfake%20PDF.pdf" target="_blank">Comparative Study on Deepfakes</a>
+      <span class="writing-meta">Asia Society &middot; 2020</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Julia Chen
+</footer>
+
+</body>
+</html>
